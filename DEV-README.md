@@ -1,4 +1,4 @@
-# nux
+#  nuxtailwind
 
 ## Build Setup
 
