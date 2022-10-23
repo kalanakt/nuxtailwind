@@ -1,0 +1,36 @@
+version: 2
+
+jobs:
+  ci:
+    docker:
+      - image: cimg/node:lts
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - yarn-v1-{{ checksum "yarn.lock" }}
+
+      - run:
+          name: Install dependencies
+          command: yarn --frozen-lockfile --cache-folder ~/.cache/yarn
+
+      - save_cache:
+          key: yarn-v1-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
+
+      - run:
+          name: Run linter
+          command: yarn lint
+
+workflows:
+  version: 2
+  ci:
+    jobs:
+      - ci:
+          filters:
+            branches:
+              only:
+                - main
+                - master
