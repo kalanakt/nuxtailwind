@@ -30,7 +30,7 @@
                 <div class="flex items-center">
                     <div class="break-words rounded-b-lg p-3 text-white">Give a Star & Follow me if you like.</div>
                     <div class="mx-1.5 ml-auto inline-flex h-8 w-8 rounded-lg bg-transparent p-1.5">
-                        <a href="https://github.com/kalanakt/nuxt-blog">
+                        <a href="https://github.com/kalanakt/nuxtailwind">
                             <span class="sr-only">Link</span>
                             <svg stroke="#FFFF" class="h-5 w-5" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
