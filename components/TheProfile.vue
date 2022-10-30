@@ -19,3 +19,13 @@
         </div>
     </div>
 </template>
+<script>
+import {Button1} from '@vwjs/vw2'
+
+export default {
+  name: 'TheProfile',
+  components: {
+   Button1,
+  }
+}
+</script>
